@@ -1,0 +1,124 @@
+============================================================
+INICIO FRONTERA: 2026-02-20 21:47:53
+Targets: [29, 31, 38, 47, 53, 61]
+PARI stack: 4GB
+============================================================
+
+============================================================
+N = 29  |  PARI stack: 4GB  |  RAM: 192 MB
+  Rango: 1  [2.0s]
+  x(P) ≈ -28.994083 (negativo)  h(P) = 8.8437
+  [0.5s]  RAM: 218 MB
+  Paso de búsqueda: 2 (solo pares)
+  Buscando k* con x(kP) in (29, 58)...
+    k=  20  x(kP)≈710.8092  RAM:218MB  t:0s
+    k=  40  x(kP)≈178.5917  RAM:218MB  t:0s
+    k=  60  x(kP)≈81.1021  RAM:218MB  t:1s
+
+  ✓ HALLADO  k* = 72
+  x(k*P) ≈ 57.95360650
+  m/n ≈ 0.0015997760
+  digitos(n) = 19911
+  digitos(m) = 19908
+  Verificacion sf: True (metodo: biracional)
+  sf = 29
+  Tiempo total: 4.2s
+  RAM final: 218 MB
+  RESULTADO: N=29 kstar=72 xkP=57.95360650 ratio=0.0015997760 hP=8.8437 digits_n=19911 sf_ok=True metodo_sf=biracional frontera=False neutro=False
+
+============================================================
+N = 31  |  PARI stack: 4GB  |  RAM: 218 MB
+  Rango: 1  [0.6s]
+  x(P) ≈ 34.306122 (positivo)  h(P) = 7.4005
+  [0.8s]  RAM: 218 MB
+  Paso de búsqueda: 1 (todos)
+  Buscando k* con x(kP) in (31, 62)...
+
+  ✓ HALLADO  k* = 1
+  x(k*P) ≈ 34.30612245
+  m/n ≈ 0.8933508887
+  digitos(n) = 4
+  digitos(m) = 4
+  Verificacion sf: True (metodo: directa)
+  sf = 31
+  Tiempo total: 1.5s
+  RAM final: 218 MB
+  RESULTADO: N=31 kstar=1 xkP=34.30612245 ratio=0.8933508887 hP=7.4005 digits_n=4 sf_ok=True metodo_sf=directa frontera=False neutro=False
+
+============================================================
+N = 38  |  PARI stack: 4GB  |  RAM: 218 MB
+  Rango: 1  [0.3s]
+  x(P) ≈ -23.728395 (negativo)  h(P) = 7.2286
+  [0.7s]  RAM: 218 MB
+  Paso de búsqueda: 2 (solo pares)
+  Buscando k* con x(kP) in (38, 76)...
+
+  ✓ HALLADO  k* = 2
+  x(k*P) ≈ 48.17530638
+  m/n ≈ 0.7322287794
+  digitos(n) = 13
+  digitos(m) = 13
+  Verificacion sf: True (metodo: directa)
+  sf = 38
+  Tiempo total: 1.0s
+  RAM final: 219 MB
+  RESULTADO: N=38 kstar=2 xkP=48.17530638 ratio=0.7322287794 hP=7.2286 digits_n=13 sf_ok=True metodo_sf=directa frontera=False neutro=False
+
+============================================================
+N = 47  |  PARI stack: 4GB  |  RAM: 219 MB
+  Rango: 1  [0.3s]
+  x(P) ≈ 298.976280 (positivo)  h(P) = 16.5620
+  [0.4s]  RAM: 219 MB
+  Paso de búsqueda: 1 (todos)
+  Buscando k* con x(kP) in (47, 94)...
+
+  ✓ HALLADO  k* = 2
+  x(k*P) ≈ 80.47269799
+  m/n ≈ 0.2878149363
+  digitos(n) = 29
+  digitos(m) = 28
+  Verificacion sf: True (metodo: directa)
+  sf = 47
+  Tiempo total: 0.7s
+  RAM final: 219 MB
+  RESULTADO: N=47 kstar=2 xkP=80.47269799 ratio=0.2878149363 hP=16.5620 digits_n=29 sf_ok=True metodo_sf=directa frontera=False neutro=False
+
+============================================================
+N = 53  |  PARI stack: 4GB  |  RAM: 219 MB
+  Rango: 1  [0.4s]
+  x(P) ≈ -32.773458 (negativo)  h(P) = 21.5853
+  [0.5s]  RAM: 220 MB
+  Paso de búsqueda: 2 (solo pares)
+  Buscando k* con x(kP) in (53, 106)...
+
+  ✓ HALLADO  k* = 2
+  x(k*P) ≈ 66.29797079
+  m/n ≈ 0.7490948907
+  digitos(n) = 38
+  digitos(m) = 38
+  Verificacion sf: True (metodo: directa)
+  sf = 53
+  Tiempo total: 0.9s
+  RAM final: 220 MB
+  RESULTADO: N=53 kstar=2 xkP=66.29797079 ratio=0.7490948907 hP=21.5853 digits_n=38 sf_ok=True metodo_sf=directa frontera=False neutro=False
+
+============================================================
+N = 61  |  PARI stack: 4GB  |  RAM: 220 MB
+  Rango: 1  [0.4s]
+  x(P) ≈ -51.646024 (negativo)  h(P) = 16.6107
+  [0.5s]  RAM: 220 MB
+  Paso de búsqueda: 2 (solo pares)
+  Buscando k* con x(kP) in (61, 122)...
+
+  ✓ HALLADO  k* = 4
+  x(k*P) ≈ 64.10596220
+  m/n ≈ 0.9490825869
+  digitos(n) = 116
+  digitos(m) = 116
+  Verificacion sf: True (metodo: biracional)
+  sf = 61
+  Tiempo total: 0.9s
+  RAM final: 220 MB
+  RESULTADO: N=61 kstar=4 xkP=64.10596220 ratio=0.9490825869 hP=16.6107 digits_n=116 sf_ok=True metodo_sf=biracional frontera=False neutro=False
+
+FIN: 2026-02-20 21:48:02

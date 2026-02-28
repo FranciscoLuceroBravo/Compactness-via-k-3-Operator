@@ -1,0 +1,99 @@
+============================================================
+VALIDACION N=37 -- Script dedicado
+Timestamp: 2026-02-28 10:41:20
+PARI stack: 4GB  |  RAM inicial: 192 MB
+============================================================
+
+Paso 1: Curva E_37
+  E_37: y^2 = x^3 - 1369*x
+  Rango: 1  [6.1s]
+  Generador P: x(P) = -1764/21025
+  x(P) aprox  = -0.08390012
+  h_can(P)    = 13.565421
+  Regimen     = I (x(P) < 0 => solo k pares)
+  [1.1s]  RAM: 217 MB
+
+Paso 2: Prediccion formula dig(n)
+  Formula: dig(n) = h(P) * (k*)^2 / log(10)
+    k=16 => pred_dig = 1508.2
+    k= 8 => pred_dig = 377.0
+    k= 4 => pred_dig = 94.3
+  Nota: k*=16 conocido de diagnostico previo
+  pred para k*=16: 1508.2
+  obs  para k*=16: ~300 (del diagnostico)
+
+Paso 3: Busqueda k* (Regimen I, step=2)
+  Saltando directamente a k=14 (k*=16 conocido)
+  Verificando k=14, 16 unicamente
+  k=14: x(14P) aprox = 86.582485  en (37,74)? False
+  k=16: x(16P) aprox = 68.131503  en (37,74)? True
+  [0.0s]  RAM: 217 MB
+
+Paso 4: Confirmacion completa (k=2,4,...,20)
+  k= 2: x(kP) aprox = 4079.318169  en rango? False
+  k= 4: x(kP) aprox = 1020.081266  en rango? False
+  k= 6: x(kP) aprox = 453.854466  en rango? False
+  k= 8: x(kP) aprox = 256.028622  en rango? False
+  k=10: x(kP) aprox = 164.853807  en rango? False
+  k=12: x(kP) aprox = 115.746087  en rango? False
+  k=14: x(kP) aprox = 86.582485  en rango? False
+  k=16: x(kP) aprox = 68.131503  en rango? True
+
+  k* CONFIRMADO = 16
+
+Paso 5: Coordenadas exactas de k*=16 P
+  x(k*P) exacto = 127060008082354264658649856936062010475893970969414050329659...
+  x(k*P) aprox  = 68.1315025202
+  m/n = 0.1586080400
+  dig(n) = 1508
+  dig(m) = 1508
+  [0.0s]  RAM: 217 MB
+
+Paso 6: Verificacion sf(C3(n,m)) = 37
+  Metodo: factores_parciales
+  sf_ok: True
+  sf = 37
+  [3.0s]
+
+Paso 7: Validacion formula dig(n)
+  h(P)          = 13.565421
+  k*            = 16
+  (k*)^2        = 256
+  pred_dig      = 1508.2
+  obs_dig       = 1508
+  error%        = 0.0%
+  Interpretacion: pred/obs = 1.00x
+
+Paso 8: Clasificacion Regimen
+  x(P) < 0 => Regimen I
+
+Paso 9: Parametrizacion universal
+  u = 2n-m,  v = n
+  u/v = 1.8413919600
+  u/v in (1,2)? True
+
+Paso 10: Verificacion minimos terminos
+  gcd(n,m) = 1  (debe ser 1)
+
+============================================================
+RESUMEN FINAL N=37
+============================================================
+  Regimen         : I
+  h_can(P)        : 13.5654
+  k*              : 16
+  x(k*P) aprox    : 68.13150252
+  m/n             : 0.1586080400
+  dig(n)          : 1508
+  dig(m)          : 1508
+  sf_ok           : True  [factores_parciales]
+  u/v             : 1.841392
+  pred_dig        : 1508.2
+  error%          : 0.0%
+  Tiempo total    : 10.4s
+  RAM final       : 217 MB
+
+  RESULTADO COMPACTO:
+  N=37 Reg=I h=13.5654 k*=16 x=68.131503 m/n=0.15860804 dig_n=1508 sf=True pred=1508.2 err=0.0%
+============================================================
+FIN: 2026-02-28 10:41:30
+Log: validacion_37_resultados.txt
